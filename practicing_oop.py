@@ -21,7 +21,7 @@ class Tshirt:
     def make_discount(self, discount):
         return self.price * (1-discount)
 
-details = Tshirt('blue', 'short sleeve', 'M', '30')
+details = Tshirt('blue', 'short sleeve', 'M', 30)
 
 print(details.color)
 print(details.style, details.price)
@@ -32,15 +32,15 @@ print(details.price)
 print(details.make_discount(.5))
 
 list_of_shirts = []
-shirt1 = Tshirt('grey', 'sleeve-less', 'XL', '45')
-shirt2 = Tshirt('green', 'long sleeve', 'L', '35')
+shirt1 = Tshirt('grey', 'sleeve-less', 'XL', 45)
+shirt2 = Tshirt('green', 'long sleeve', 'L', 35)
 
 list_of_shirts.append(shirt1)
 list_of_shirts.append(shirt2)
 
 #looping in all items inside the list
 for item in list_of_shirts:
-    print("color: |{}|, style: |{}|, size: |{}|, price: |{}|"\
+    print("color-> {}, style-> {}, size-> {}, price-> {}"\
         .format(item.color, item.style, item.size, item.price))
 
 #looping on one of the specs
